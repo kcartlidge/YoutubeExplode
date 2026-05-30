@@ -24,13 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CliWrap" />
+    <PackageReference Include="Binternal" PrivateAssets="all" />
+    <PackageReference Include="CliWrap" Internalize="true" PrivateAssets="all" />
     <PackageReference Include="CSharpier.MsBuild" PrivateAssets="all" />
     <PackageReference Include="PolyShim" PrivateAssets="all" />
     <PackageReference Include="PowerKit" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\YoutubeExplode\YoutubeExplode.csproj" />
+    <ProjectReference Include="../YoutubeExplode/YoutubeExplode.csproj" />
   </ItemGroup>
 </Project>
