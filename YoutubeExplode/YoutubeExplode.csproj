@@ -25,7 +25,7 @@
     <PackageReference Include="AngleSharp" Internalize="true" PrivateAssets="all" />
     <PackageReference Include="Binternal" PrivateAssets="all" />
     <PackageReference Include="CSharpier.MsBuild" PrivateAssets="all" />
-    <PackageReference Include="Deorcify" PrivateAssets="all" />
+    <PackageReference Include="Deorcify" Internalize="true" PrivateAssets="all" />
     <PackageReference Include="JsonExtensions" Internalize="true" PrivateAssets="all" />
     <PackageReference Include="Lazy.Fody" PrivateAssets="all" />
     <PackageReference
@@ -33,7 +33,7 @@
       Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'netstandard2.1'))"
     />
     <PackageReference Include="PolyShim" PrivateAssets="all" />
-    <PackageReference Include="PowerKit" PrivateAssets="all" />
+    <PackageReference Include="PowerKit" Internalize="true" PrivateAssets="all" />
     <!-- System.Text.Json is downgraded to v9.0.2 for netstandard2.0 targets to maintain compatibility
          with UWP projects using the .NET Native Toolchain, which cannot handle v10.x.
          See https://github.com/Tyrrrz/YoutubeExplode/issues/937 -->
@@ -46,9 +46,5 @@
       Include="System.Threading.Tasks.Extensions"
       Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'netstandard2.1'))"
     />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
 </Project>

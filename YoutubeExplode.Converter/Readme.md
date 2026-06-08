@@ -14,6 +14,9 @@ This package relies on [FFmpeg](https://ffmpeg.org) under the hood.
 > This package requires the [FFmpeg CLI](https://ffmpeg.org) to work, which can be downloaded [here](https://github.com/Tyrrrz/FFmpegBin/releases).
 > Ensure that it's located in your application's probe directory or on the system's `PATH`, or provide a custom location yourself using one of the available method overloads.
 
+> [!TIP]
+> You can use [**Binternal**](https://github.com/Tyrrrz/Binternal) to internalize this library if you prefer to avoid taking an external dependency.
+
 ## Usage
 
 **YoutubeExplode.Converter** exposes its functionality by enhancing **YoutubeExplode**'s clients with additional extension methods.
@@ -41,7 +44,7 @@ Internally, this resolves the video's media streams, downloads the best candidat
 
 > [!WARNING]
 > Stream muxing is a resource-intensive process, especially when transcoding is involved.
-> To avoid transcoding, consider specifying either `mp4` or `webm` for the output format, as these are the containers that YouTube uses for most of its streams. 
+> To avoid transcoding, consider specifying either `mp4` or `webm` for the output format, as these are the containers that YouTube uses for most of its streams.
 
 ### Customizing the conversion process
 
