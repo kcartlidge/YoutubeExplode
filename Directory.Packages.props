@@ -8,7 +8,7 @@
     <PackageVersion Include="AsyncImageLoader.Avalonia" Version="3.8.0" />
     <PackageVersion Include="Avalonia" Version="12.0.4" />
     <PackageVersion Include="Avalonia.Desktop" Version="12.0.4" />
-    <PackageVersion Include="Binternal" Version="1.0.0" />
+    <PackageVersion Include="Binternal" Version="1.0.1" />
     <PackageVersion Include="CliWrap" Version="3.10.1" />
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageVersion Include="coverlet.collector" Version="10.0.1" />
@@ -17,7 +17,7 @@
     <PackageVersion Include="FluentAssertions" Version="8.10.0" />
     <PackageVersion Include="GitHubActionsTestLogger" Version="3.0.4" />
     <PackageVersion Include="Gress" Version="2.2.0" />
-    <PackageVersion Include="JsonExtensions" Version="1.2.2" />
+    <PackageVersion Include="JsonExtensions" Version="1.2.3" />
     <PackageVersion Include="Lazy.Fody" Version="1.11.0" />
     <PackageVersion Include="Material.Avalonia" Version="3.16.1" />
     <PackageVersion Include="Material.Icons.Avalonia" Version="3.0.2" />
