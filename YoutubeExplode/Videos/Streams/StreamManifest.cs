@@ -14,17 +14,17 @@ public class StreamManifest(IReadOnlyList<IStreamInfo> streams)
     public IReadOnlyList<IStreamInfo> Streams { get; } = streams;
 
     /// <summary>
-    /// Gets streams that contain audio (i.e. muxed and audio-only streams).
+    /// Gets streams that contain audio (i.e., muxed and audio-only streams).
     /// </summary>
     public IEnumerable<IAudioStreamInfo> GetAudioStreams() => Streams.OfType<IAudioStreamInfo>();
 
     /// <summary>
-    /// Gets streams that contain video (i.e. muxed and video-only streams).
+    /// Gets streams that contain video (i.e., muxed and video-only streams).
     /// </summary>
     public IEnumerable<IVideoStreamInfo> GetVideoStreams() => Streams.OfType<IVideoStreamInfo>();
 
     /// <summary>
-    /// Gets muxed streams (i.e. streams containing both audio and video).
+    /// Gets muxed streams (i.e., streams containing both audio and video).
     /// </summary>
     /// <remarks>
     /// These streams are generally deprecated by YouTube and may not be available

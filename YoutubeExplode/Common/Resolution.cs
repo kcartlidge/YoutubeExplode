@@ -19,7 +19,7 @@ public readonly partial struct Resolution(int width, int height)
     public int Height { get; } = height;
 
     /// <summary>
-    /// Viewport area (i.e. width multiplied by height).
+    /// Viewport area (i.e., width multiplied by height).
     /// </summary>
     public int Area => Width * Height;
 

@@ -18,12 +18,12 @@ public readonly partial struct VideoQuality(string label, int maxHeight, int fra
         : this(FormatLabel(maxHeight, framerate), maxHeight, framerate) { }
 
     /// <summary>
-    /// Quality label, as seen on YouTube (e.g. 1080p, 720p60, etc).
+    /// Quality label, as seen on YouTube (e.g., 1080p, 720p60, etc).
     /// </summary>
     public string Label { get; } = label;
 
     /// <summary>
-    /// Maximum video height allowed by this quality (e.g. 1080 for 1080p60).
+    /// Maximum video height allowed by this quality (e.g., 1080 for 1080p60).
     /// Actual video height may be lower in some cases.
     /// </summary>
     public int MaxHeight { get; } = maxHeight;
@@ -34,7 +34,7 @@ public readonly partial struct VideoQuality(string label, int maxHeight, int fra
     public int Framerate { get; } = framerate;
 
     /// <summary>
-    /// Whether this is a high definition video (i.e. 1080p or above).
+    /// Whether this is a high definition video (i.e., 1080p or above).
     /// </summary>
     public bool IsHighDefinition => MaxHeight >= 1080;
 

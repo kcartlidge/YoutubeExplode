@@ -8,7 +8,7 @@ namespace YoutubeExplode.Videos.Streams;
 public readonly partial struct Container(string name)
 {
     /// <summary>
-    /// Container name (e.g. mp4, webm, etc).
+    /// Container name (e.g., mp4, webm, etc).
     /// Can be used as file extension.
     /// </summary>
     public string Name { get; } = name;

@@ -71,7 +71,7 @@ public class SearchClient(HttpClient http)
                     videoData.ChannelId
                     ?? throw new YoutubeExplodeException("Failed to extract the video channel ID.");
 
-                // Some videos have invalid channel IDs (e.g. just "UC"). Such videos appear to generally
+                // Some videos have invalid channel IDs (e.g., just "UC"). Such videos appear to generally
                 // be unplayable anyway, so it's safe to skip them.
                 // https://github.com/Tyrrrz/YoutubeExplode/issues/944
                 var parsedVideoChannelId = ChannelId.TryParse(videoChannelId);

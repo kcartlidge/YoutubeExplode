@@ -12,7 +12,7 @@ public readonly partial struct Language(string code, string name)
 {
     /// <summary>
     /// Two-letter or three-letter language code, possibly with a regional identifier
-    /// (e.g. 'en' or 'en-US' or 'eng').
+    /// (e.g., 'en' or 'en-US' or 'eng').
     /// </summary>
     public string Code { get; } = code;
 

@@ -27,7 +27,7 @@ public interface IPlaylist
     /// Playlist author.
     /// </summary>
     /// <remarks>
-    /// May be null in case of auto-generated playlists (e.g. mixes, topics, etc).
+    /// May be null in case of auto-generated playlists (e.g., mixes, topics, etc).
     /// </remarks>
     Author? Author { get; }
 

@@ -40,7 +40,7 @@ await youtube.Videos.DownloadAsync(videoUrl, "video.mp4");
 Internally, this resolves the video's media streams, downloads the best candidates based on format, bitrate, framerate, and quality, and muxes them together into a single file.
 
 > [!NOTE]
-> If the specified output format is a known audio-only container (e.g. `mp3` or `ogg`) then only the audio stream is downloaded.
+> If the specified output format is a known audio-only container (e.g., `mp3` or `ogg`) then only the audio stream is downloaded.
 
 > [!WARNING]
 > Stream muxing is a resource-intensive process, especially when transcoding is involved.
@@ -101,4 +101,4 @@ await youtube.Videos.DownloadAsync(
 
 > [!WARNING]
 > Stream muxing is a resource-intensive process, especially when transcoding is involved.
-> To avoid transcoding, consider prioritizing streams that are already encoded in the desired format (e.g. `mp4` or `webm`).
+> To avoid transcoding, consider prioritizing streams that are already encoded in the desired format (e.g., `mp4` or `webm`).
